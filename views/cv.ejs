@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .name{
+        text-align: center;margin-top: 3rem;color: white;margin-bottom: 1rem;
+    }
+    .desc{
+        width: 30%; padding-left: 1%;padding:1%;margin-top: 3rem;margin-bottom: 12rem; margin-left: 50%;transform: translate(-50%); color: white;border: 2px solid white;
+    }
+    @media screen and (max-width:800px) {
+        .name{
+            font-size: 23px;
+        }
+        .desc{
+            width: 70%;
+        }
+    }
+</style>
+<body style="margin: 0;padding: 0;background-color: #5200FF;">
+   <img src="<%=data.ProfileImage%>" style="width: 280px;height: 280px;border-radius: 100%;background-color: white;margin-left: 50%;transform: translate(-50%);margin-top: 6rem;" alt="">
+   <h1 class="name" style=""><%= data.name%></h1>
+    <h3 style="padding: 0;text-align: center;color: aliceblue;margin-bottom: 5rem;"><%=data.occupation%></h3>
+   <p class="desc" ><%=data.description%></p>
+
+   <div class="socialMedia" style="text-align: center;margin-bottom: 2rem;" >
+   <a href="<%=data.InstaLink%>"> <img src=""  style="width: 48px;height: 48px;background-color: white;text-align: center;" alt=""></a>
+   <a href="<%=data.WhtspLink%>"> <img src="" style="width: 48px;height: 48px;background-color: white;text-align: center;" alt=""></a>
+   <a href="<%=data.LinkedInLink%>"> <img src="" style="width: 48px;height: 48px;background-color: white;text-align: center;" alt=""></a>
+   </div>
+
+   <footer style="height: 3rem;background-color: white;bottom: 0;">
+    <p style="text-align: center;position: relative;top: 1rem;">Powered By Shamil Thaikkadan</p>
+   </footer>
+
+</body>
+</html
